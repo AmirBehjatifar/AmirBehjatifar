@@ -1,0 +1,89 @@
+using System;
+
+namespace Console_Calculator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Console Calculator , Created By AmirMahDi Behjatifar
+            int n = 0;
+            while (n != 5)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("----- Console Calculator ------");
+                Console.WriteLine("");
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Developed By AmirMahDi ");
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("_________________________");
+                Console.ResetColor();
+
+                Console.WriteLine("Choose a number from list ");
+
+                Console.WriteLine("(1) Sum | A + B ");
+                Console.WriteLine("(2) Minus | A - B ");
+                Console.WriteLine("(3) Multiplication | A * B ");
+                Console.WriteLine("(4) repartition | A / B ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ResetColor();
+                Console.WriteLine("(5) Exit ");
+                n = int.Parse(Console.ReadLine());
+
+                int num1, num2;
+                switch(n)
+                {
+                    case 1:
+                        {
+                            Console.WriteLine("enter the frist number");
+                            num1 = int.Parse(Console.ReadLine());
+                            Console.WriteLine("enter the second number");
+                            num2 = int.Parse(Console.ReadLine());
+                            Console.Clear();
+                            Console.WriteLine("Calculator Activity ");
+                            Console.WriteLine($"{num1} + {num2} = {(num1 + num2)}");
+                            break;
+                        }
+
+                    case 2:
+                        {
+                            Console.WriteLine("enter the frist number");
+                            num1 = int.Parse(Console.ReadLine());
+                            Console.WriteLine("enter the second number");
+                            num2 = int.Parse(Console.ReadLine());
+                            Console.Clear();
+                            Console.WriteLine("Calculator Activity ");
+                            Console.WriteLine($"{num1} - {num2} = {(num1 - num2)}");
+                            break;
+                        }
+
+                    case 3:
+                        {
+                            Console.WriteLine("enter the frist number");
+                            num1 = int.Parse(Console.ReadLine());
+                            Console.WriteLine("enter the second number");
+                            num2 = int.Parse(Console.ReadLine());
+                            Console.Clear();
+                            Console.WriteLine("Calculator Activity ");
+                            Console.WriteLine($"{num1} * {num2} = {(num1 * num2)}");
+                            break;
+                        }
+
+                    case 4:
+                        {
+                            Console.WriteLine("enter the frist number");
+                            num1 = int.Parse(Console.ReadLine());
+                            Console.WriteLine("enter the second number");
+                            num2 = int.Parse(Console.ReadLine());
+                            Console.Clear();
+                            Console.WriteLine("Calculator Activity ");
+                            Console.WriteLine($"{num1} / {num2} = {(num1 / num2)}");
+                            break;
+                        }
+                }
+            }
+        }
+    }
+}
